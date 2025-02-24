@@ -1,0 +1,68 @@
+version = 3
+
+
+
+[[blocks]]
+type='prompt'
+alignment='right'
+
+
+[[blocks.segments]]
+type = "docker"
+style = "plain"
+foreground = "#0B59E7"
+template = "  {{ .Context }} "
+
+[[blocks]]
+type = 'prompt'
+alignment = 'left'
+newLine= true
+
+[[blocks.segments]]
+template = '• '
+foreground = 'green'
+type = 'text'
+style = 'plain'
+
+[[blocks.segments]]
+type = "path"
+style = "plain"
+template = "{{ .Path }} "
+
+[blocks.segments.properties]
+style = "folder"
+home_icon = '~'
+
+
+[[blocks.segments]]
+template = '{{ .HEAD }} '
+foreground = 'blue'
+type = 'git'
+style = 'plain'
+
+[blocks.segments.properties]
+branch_icon = ' '
+cherry_pick_icon = ' '
+commit_icon = ' '
+fetch_status = false
+fetch_upstream_icon = false
+merge_icon = ' '
+no_commits_icon = ' '
+rebase_icon = ' '
+revert_icon = ' '
+tag_icon = ' '
+
+[[blocks]]
+type = 'prompt'
+alignment = 'left'
+newLine= true
+
+[[blocks.segments]]
+template = ' '
+foreground = 'darkGray'
+type = 'text'
+style = 'plain'
+
+[transient_prompt]
+foreground = "magenta"
+template = "\u279c "
