@@ -2,16 +2,16 @@ version = 3
 
 
 
-[[blocks]]
-type='prompt'
-alignment='right'
+# [[blocks]]
+# type='prompt'
+# alignment='right'
 
 
-[[blocks.segments]]
-type = "docker"
-style = "plain"
-foreground = "#0B59E7"
-template = "  {{ .Context }} "
+# [[blocks.segments]]
+# type = "docker"
+# style = "plain"
+# foreground = "#0B59E7"
+# template = "  {{ .Context }} "
 
 [[blocks]]
 type = 'prompt'
