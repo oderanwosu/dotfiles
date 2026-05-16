@@ -1,0 +1,12 @@
+# Session state
+zsh/.zsh_history
+zsh/.zsh_sessions/
+
+# IDE/Claude
+.claude/
+
+# Theme/UI
+gtk-2.0/
+
+# Backups
+*.bak
