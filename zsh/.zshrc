@@ -13,8 +13,19 @@ alias lt="eza --tree --level=2"
 alias config="code ~/.config"
 alias academic-scope="~/Developer/school/"
 alias cleand="~/.config/zsh/scripts/clean_downloads.sh"
-export TMUX_CONFIG_PATH="~/.config/tmux/tmux.conf"
-alias tmux="tmux -f $TMUX_CONFIG_PATH"
 export PATH="~/Library/Python/3.9/bin:$PATH"
 export PATH="/opt/homebrew/opt/node@22/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
+
+# === Zsh Plugins ===
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# Color scheme matching oh-my-posh aesthetic
+ZSH_HIGHLIGHT_STYLES[command]='fg=green,bold'
+ZSH_HIGHLIGHT_STYLES[alias]='fg=green,bold'
+ZSH_HIGHLIGHT_STYLES[builtin]='fg=green,bold'
+ZSH_HIGHLIGHT_STYLES[function]='fg=green,bold'
+ZSH_HIGHLIGHT_STYLES[comment]='fg=blue'
+ZSH_HIGHLIGHT_STYLES[unknown-token]='fg=red'
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=8'
